@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BottomNav from './BottomNav';
 import Slides from './Slides';
 import Information from './Information';
@@ -6,6 +6,7 @@ import Store from './Store';
 import ProductInformation from './ProductInformation';
 import Description from './Description';
 import Similar from './Similar';
+import { createPortal } from 'react-dom';
 
 const ProductsDetail = () => {
     return (
@@ -17,7 +18,7 @@ const ProductsDetail = () => {
             <Description />
             <Similar />
 
-            <BottomNav />
+            {createPortal(<BottomNav />, document.body)}
         </div>
     );
 };
