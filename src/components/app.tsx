@@ -4,6 +4,7 @@ import { RecoilRoot } from 'recoil';
 import { AnimationRoutes, App, SnackbarProvider, ZMPRouter } from 'zmp-ui';
 import HomePage from '../pages';
 import ProductDetail from '../pages/products-detail';
+import Categories from '../pages/categories';
 
 const MyApp = () => {
     return (
@@ -19,6 +20,10 @@ const MyApp = () => {
                             <Route
                                 path="/products/:id"
                                 element={<ProductDetail />}
+                            />
+                            <Route
+                                path="/categories"
+                                element={<Categories />}
                             />
                         </AnimationRoutes>
                     </ZMPRouter>

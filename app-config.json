@@ -1,14 +1,14 @@
 {
     "app": {
         "title": "Ecomx-Zalo-Mini-App",
-        "headerColor": "#1843EF",
+        "headerColor": "#ef6c00",
         "textColor": "white",
-        "statusBarColor": "#1843EF",
+        "statusBarColor": "#ef6c00",
         "leftButton": "back"
     },
     "debug": false,
     "listCSS": [],
     "listSyncJS": [],
     "listAsyncJS": [],
-    "pages": ["/products-detail"]
+    "pages": ["/products-detail", "/categories"]
 }
